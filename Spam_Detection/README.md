@@ -1,7 +1,5 @@
 # 📧 EMAIL SPAM DETECTION WITH MACHINE LEARNING
 
-## 📌 TASK 4 - OASIS INFOBYTE DATA SCIENCE INTERNSHIP
-
 ---
 
 ## 🎯 PROJECT OVERVIEW
@@ -211,11 +209,11 @@ predict_spam("Congratulations! You've won $1000!")
 
 ## 📧 CONTACT
 
-**Your Name**  
+**Rakshita R Talegaon**  
 Data Science Intern - Oasis Infobyte  
 
-GitHub: https://github.com/yourusername  
-LinkedIn: Your LinkedIn Profile  
+GitHub: https://github.com/RAKSHITART  
+LinkedIn: www.linkedin.com/in/rakshita-r-talegaon 
 
 ---
 
