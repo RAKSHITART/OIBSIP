@@ -1,17 +1,23 @@
 # 🚗 CAR PRICE PREDICTION WITH MACHINE LEARNING
 
+## 📌 TASK 3 - OASIS INFOBYTE DATA SCIENCE INTERNSHIP
+
+---
+
 ## 🎯 PROJECT OVERVIEW
 
-Built a machine learning model to predict the selling price of cars based on various features like year, present price, kilometers driven, fuel type, transmission, and more. The model achieves **99.2% accuracy** on test data.
+Built a machine learning model to predict the **selling price of cars** based on various features like year, present price, kilometers driven, fuel type, transmission, and more.  
+The model achieves **99.2% accuracy** on test data with Linear Regression.
 
 ---
 
 ## 📊 DATASET
 
-- **Source**: Car Price Prediction Dataset  
+- **Source**: Car Price Prediction Dataset (Kaggle)  
 - **Total Samples**: 299 cars (after cleaning)  
 - **Features**: 9 original + 6 engineered features  
-- **Target**: Selling Price (in Lakhs, 1 Lakh = ₹100,000)
+- **Target**: Selling Price (in Lakhs, 1 Lakh = ₹100,000)  
+- **Price Range**: ₹0.10 Lakhs (₹10,000) to ₹35.00 Lakhs (₹35,00,000)
 
 ### Original Features
 
@@ -41,7 +47,7 @@ Built a machine learning model to predict the selling price of cars based on var
 |----------|-------------|
 | **Programming** | Python 3.x |
 | **Data Processing** | Pandas, NumPy |
-| **Visualization** | Matplotlib, Seaborn |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
 | **Machine Learning** | Scikit-learn, XGBoost, LightGBM, CatBoost |
 | **Hyperparameter Tuning** | Optuna |
 | **Model Persistence** | Joblib |
@@ -53,16 +59,15 @@ Built a machine learning model to predict the selling price of cars based on var
 ```
 Task3_Car_Price_Prediction/
 │
-├── README.md                       # This file
-├── car_price_prediction.ipynb      # Complete notebook with all blocks
-├── requirements.txt                # Required Python packages
+├── car_price_prediction.ipynb     # Complete notebook with all blocks
+├── requirements.txt               # Required Python packages
 │
-└── car_price_model/                # Saved model artifacts
-    ├── best_model.pkl              # Trained Linear Regression model
-    ├── preprocessor.pkl            # Fitted preprocessor (Scaler + OneHot)
-    ├── numerical_cols.pkl          # List of numerical column names
-    ├── categorical_cols.pkl        # List of categorical column names
-    └── feature_names.pkl           # All feature names after encoding
+└── car_price_model/               # Saved model artifacts
+    ├── best_model.pkl             # Trained Linear Regression model
+    ├── preprocessor.pkl           # Fitted preprocessor (Scaler + OneHot)
+    ├── numerical_cols.pkl         # List of numerical column names
+    ├── categorical_cols.pkl       # List of categorical column names
+    └── feature_names.pkl          # All feature names after encoding
 ```
 
 ---
@@ -98,14 +103,14 @@ Task3_Car_Price_Prediction/
 
 ### Best Model: **Linear Regression**
 
-| Metric | Value | Interpretation |
+| Metric | Score | Interpretation |
 |------|------|---------------|
 | **R² Score** | 0.9921 | 99.2% accuracy |
 | **RMSE** | ₹0.45 Lakhs | ₹45,000 average error |
 | **MAE** | ₹0.29 Lakhs | ₹29,000 average absolute error |
 | **MAPE** | 19.65% | 19.65% percentage error |
 
-### Performance on Test Samples
+### Actual vs Predicted Comparison
 
 ```
 Car: city (2016)
@@ -116,7 +121,13 @@ Actual: ₹5.25L → Predicted: ₹5.05L (96.15% accuracy)
 
 Car: Royal Enfield (2015)
 Actual: ₹1.11L → Predicted: ₹1.11L (99.60% accuracy)
+
+Car: Honda CB Shine (2007)
+Actual: ₹0.12L → Predicted: ₹0.16L (64.14% accuracy)
 ```
+
+- **Best Prediction:** Royal Enfield (99.60% accuracy)  
+- **Worst Prediction:** Honda CB Shine (64.14% accuracy) — very cheap bike
 
 ---
 
@@ -129,6 +140,7 @@ Actual: ₹1.11L → Predicted: ₹1.11L (99.60% accuracy)
 | **present_price** | +₹0.85L per 1L increase |
 | **Year** | +₹0.32L per year newer |
 | **fuel_type_Diesel** | +₹0.28L compared to Petrol |
+| **CarAge** | +₹0.20L (newer cars cost more) |
 
 ### Top Negative Influences (Decrease Price)
 
@@ -137,12 +149,13 @@ Actual: ₹1.11L → Predicted: ₹1.11L (99.60% accuracy)
 | **driven_kms** | -₹0.15L per 10,000 km driven |
 | **transmission_Manual** | -₹0.15L compared to Automatic |
 | **Owner** | -₹0.12L per additional owner |
+| **fuel_type_CNG** | -₹0.10L compared to Petrol |
 
 ---
 
 ## 🎯 BUDGET RECOMMENDATION SYSTEM
 
-The model includes a budget recommendation feature that finds cars within your budget:
+The model includes a budget recommendation feature that finds cars within your budget.
 
 ```python
 # Find cars around ₹5 Lakhs (₹500,000)
@@ -152,16 +165,25 @@ recommendations = get_car_recommendation(5.0, best_model, preprocessor, X_train,
 ### Sample Output
 
 ```
-Budget: ₹5.0 Lakhs (₹500,000)
+💰 Budget: ₹0.25 Lakhs (₹25,000)
+- Honda CB twister (2013): ₹0.25L
+- Suzuki Access 125 (2008): ₹0.25L
+- Bajaj Discover 100 (2013): ₹0.27L
 
+💰 Budget: ₹5.0 Lakhs (₹500,000)
 - verna (2013): ₹4.99L
 - corolla altis (2010): ₹5.01L
 - grand i10 (2015): ₹5.03L
+
+💰 Budget: ₹10.0 Lakhs (₹1,000,000)
+- city (2016): ₹10.02L
+- innova (2014): ₹10.29L
+- city (2016): ₹10.29L
 ```
 
 ---
 
-## 🚀 HOW TO USE
+## 🚀 HOW TO RUN
 
 ### 1️⃣ Clone the repository
 
@@ -188,11 +210,9 @@ jupyter notebook car_price_prediction.ipynb
 import joblib
 import pandas as pd
 
-# Load model artifacts
 model = joblib.load('car_price_model/best_model.pkl')
 preprocessor = joblib.load('car_price_model/preprocessor.pkl')
 
-# Create car features
 car = {
     'Year': 2015,
     'present_price': 8.5,
@@ -210,7 +230,6 @@ car = {
     'Trans_Owner': 'Manual_1'
 }
 
-# Predict
 input_df = pd.DataFrame([car])
 processed = preprocessor.transform(input_df)
 price = model.predict(processed)[0]
@@ -218,19 +237,23 @@ price = model.predict(processed)[0]
 print(f"Predicted Price: ₹{price:.2f} Lakhs")
 ```
 
+Output:
+
+```
+Predicted Price: ₹7.56 Lakhs
+```
+
 ---
 
-## 📊 KEY ACHIEVEMENTS
+## 📊 SAMPLE PREDICTIONS
 
-✅ **99.2% accuracy** on test data  
-✅ **12 ML models** compared and evaluated  
-✅ **No data leakage** — preprocessor fitted on training only  
-✅ **6 engineered features** to improve performance  
-✅ **Optuna hyperparameter tuning** for top models  
-✅ **Ensemble methods** (Voting & Stacking)  
-✅ **Budget recommendation system**  
-✅ **Production-ready prediction function**  
-✅ **Complete ML pipeline from data to deployment**
+| Car | Year | Actual Price | Predicted Price | Accuracy |
+|-----|------|-------------|----------------|----------|
+| city | 2016 | ₹8.99L | ₹8.91L | 99.12% |
+| brio | 2015 | ₹5.25L | ₹5.05L | 96.15% |
+| Royal Enfield | 2015 | ₹1.11L | ₹1.11L | 99.60% |
+| Honda CB Shine | 2007 | ₹0.12L | ₹0.16L | 64.14% |
+| TVS Sport | 2017 | ₹0.48L | ₹0.58L | 78.56% |
 
 ---
 
@@ -246,14 +269,33 @@ Training Size Analysis
 90% → Test R²: 0.9912
 ```
 
-**Conclusion:** Model is well-fitted with minimal overfitting (gap < 0.01)
+**Conclusion**
+
+- Model is well-fitted with minimal overfitting (gap < 0.01)  
+- Adding more data would provide diminishing returns  
+- Model has converged to optimal performance  
+
+---
+
+## 🎯 KEY ACHIEVEMENTS
+
+✅ 99.2% accuracy on test data  
+✅ 12 ML models compared and evaluated  
+✅ No data leakage — preprocessor fitted on training only  
+✅ 6 engineered features to improve performance  
+✅ Optuna hyperparameter tuning for top models  
+✅ Ensemble methods (Voting & Stacking)  
+✅ Budget recommendation system with lakhs conversion  
+✅ Production-ready prediction function  
+✅ Complete ML pipeline from data to deployment  
+✅ Feature importance analysis with coefficient interpretation  
 
 ---
 
 ## 📚 REFERENCES
 
 Scikit-learn Documentation  
-https://scikit-learn.org/
+https://scikit-learn.org/stable/
 
 Optuna Documentation  
 https://optuna.org/
@@ -265,11 +307,11 @@ https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho
 
 ## 📧 CONTACT
 
-**Rakshit Art**  
-Data Science Intern - Oasis Infobyte  
+**Rakshita R Talegaon**  
+Data Science Intern - Oasis Infobyte
 
 GitHub: https://github.com/RAKSHITART  
-LinkedIn:www.linkedin.com/in/rakshita-r-talegaon 
+LinkedIn: https://www.linkedin.com/in/rakshita-r-talegaon
 
 ---
 
