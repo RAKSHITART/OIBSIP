@@ -289,7 +289,7 @@ This project was developed as part of the **Oasis Infobyte Data Science Internsh
 
 # 📧 Contact
 
-**Rakshita R Talegaon**
+**Rakshita R Talegaon**<br>
 Data Science Intern – Oasis Infobyte<br>
 
 GitHub
