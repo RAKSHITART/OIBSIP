@@ -1,9 +1,5 @@
 # 🚗 CAR PRICE PREDICTION WITH MACHINE LEARNING
 
-## 📌 TASK 3 - OASIS INFOBYTE DATA SCIENCE INTERNSHIP
-
----
-
 ## 🎯 PROJECT OVERVIEW
 
 Built a machine learning model to predict the selling price of cars based on various features like year, present price, kilometers driven, fuel type, transmission, and more. The model achieves **99.2% accuracy** on test data.
