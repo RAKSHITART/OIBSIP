@@ -290,10 +290,10 @@ This project was developed as part of the **Oasis Infobyte Data Science Internsh
 # 📧 Contact
 
 **Rakshita R Talegaon**
-Data Science Intern – Oasis Infobyte
+Data Science Intern – Oasis Infobyte<br>
 
 GitHub
-[https://github.com/RAKSHITART](https://github.com/RAKSHITART)
+[https://github.com/RAKSHITART](https://github.com/RAKSHITART)<br>
 
 LinkedIn
 [https://www.linkedin.com/in/rakshita-r-talegaon](https://www.linkedin.com/in/rakshita-r-talegaon)
