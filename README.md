@@ -1,21 +1,23 @@
 
 
----
-
 # 🏢 OASIS INFOBYTE DATA SCIENCE INTERNSHIP
 
 ## 📌 Repository: OIBSIP
 
 Welcome to my **Data Science Internship repository at Oasis Infobyte**.
-This repository contains **three end-to-end machine learning projects** demonstrating different areas of data science including **predictive modeling, natural language processing, and marketing analytics**.
+This repository contains **three end-to-end machine learning projects** demonstrating different areas of data science including:
 
-Each project follows a **complete ML pipeline** including:
+* Predictive Modeling
+* Natural Language Processing (NLP)
+* Marketing Analytics
+
+Each project follows a **complete Machine Learning pipeline**, including:
 
 * Data preprocessing
-* Exploratory data analysis
+* Exploratory Data Analysis (EDA)
 * Feature engineering
 * Model training and evaluation
-* Performance comparison
+* Model comparison
 * Business insights and recommendations
 
 ---
@@ -25,7 +27,7 @@ Each project follows a **complete ML pipeline** including:
 **Rakshita R Talegaon**
 Data Science Intern – Oasis Infobyte
 
-📧 Email: *rakshitatalegaon@gmail.com*
+📧 Email: [rakshitatalegaon@gmail.com](mailto:rakshitatalegaon@gmail.com)
 🔗 LinkedIn: [https://www.linkedin.com/in/rakshita-r-talegaon](https://www.linkedin.com/in/rakshita-r-talegaon)
 🐙 GitHub: [https://github.com/RAKSHITART](https://github.com/RAKSHITART)
 
@@ -35,9 +37,9 @@ Data Science Intern – Oasis Infobyte
 
 | #     | Task                                                  | Description                                     | Accuracy   | Key Technologies               |
 | ----- | ----------------------------------------------------- | ----------------------------------------------- | ---------- | ------------------------------ |
-| **3** | [Car Price Prediction](#-Car-Price-Prediction) | Predict used car prices using regression models | **99.2%**  | Linear Regression, Optuna      |
-| **4** | [Email Spam Detection](#-Spam-Detection) | Classify SMS messages as spam or ham            | **98.9%**  | NLP, Random Forest, SMOTE      |
-| **5** | [Sales Prediction](#-Sales-Prediction)         | Predict sales based on advertising spend        | **98.97%** | Lasso Regression, ROI Analysis |
+| **3** | [Car Price Prediction](#-task-3-car-price-prediction) | Predict used car prices using regression models | **99.2%**  | Linear Regression, Optuna      |
+| **4** | [Email Spam Detection](#-task-4-email-spam-detection) | Classify SMS messages as spam or ham            | **98.9%**  | NLP, Random Forest, SMOTE      |
+| **5** | [Sales Prediction](#-task-5-sales-prediction)         | Predict sales from advertising spend            | **98.97%** | Lasso Regression, ROI Analysis |
 
 ---
 
@@ -89,8 +91,8 @@ Predicted Price: ₹8.91 Lakhs
 Accuracy: 99.12%
 ```
 
-📁 View Full Details
-`./Car_Price_Prediction/README.md`
+📁 **View Full Details:**
+[Car Price Prediction Project](./Car_Price_Prediction/README.md)
 
 ---
 
@@ -99,13 +101,13 @@ Accuracy: 99.12%
 ## ✉️ Spam vs Ham Classification
 
 **Goal:**
-Develop a **Natural Language Processing model** to detect spam SMS messages while minimizing false positives.
+Develop a **Natural Language Processing (NLP) model** to detect spam SMS messages while minimizing false positives.
 
 ### Key Features
 
 * **Dataset:** 5,169 SMS messages
 
-* **Class Distribution:**
+* **Class Distribution**
 
   * Ham: 87.4%
   * Spam: 12.6%
@@ -133,13 +135,13 @@ False Positives: 2 out of 903 ham messages
 
 ```
                 Predicted
-                Ham    Spam
-Actual Ham      903      2
-Actual Spam       9    122
+                Ham   Spam
+Actual Ham      903     2
+Actual Spam       9   122
 ```
 
-📁 View Full Details
-`./Spam_Detection/README.md`
+📁 **View Full Details:**
+[Spam Detection Project](./Spam_Detection/README.md)
 
 ---
 
@@ -179,8 +181,8 @@ MAPE     : 4.34%
 * **Radio:** Highest ROI and marginal impact
 * **Newspaper:** Weakest influence on sales
 
-📁 View Full Details
-`./Sales_Prediction/README.md`
+📁 **View Full Details:**
+[Sales Prediction Project](./Sales_Prediction/README.md)
 
 ---
 
@@ -298,7 +300,8 @@ LinkedIn
 
 ---
 
-⭐ If you find this repository useful, consider **starring the repository**!
+⭐ **If you find this repository helpful, please consider giving it a star!**
 
 ---
+
 
