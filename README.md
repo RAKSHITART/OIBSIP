@@ -27,8 +27,8 @@ Each project follows a **complete Machine Learning pipeline**, including:
 **Rakshita R Talegaon**
 Data Science Intern – Oasis Infobyte
 
-📧 Email: [rakshitatalegaon@gmail.com](mailto:rakshitatalegaon@gmail.com)
-🔗 LinkedIn: [https://www.linkedin.com/in/rakshita-r-talegaon](https://www.linkedin.com/in/rakshita-r-talegaon)
+📧 Email: [rakshitatalegaon@gmail.com](mailto:rakshitatalegaon@gmail.com)<br>
+🔗 LinkedIn: [https://www.linkedin.com/in/rakshita-r-talegaon](https://www.linkedin.com/in/rakshita-r-talegaon)<br>
 🐙 GitHub: [https://github.com/RAKSHITART](https://github.com/RAKSHITART)
 
 ---
@@ -37,9 +37,9 @@ Data Science Intern – Oasis Infobyte
 
 | #     | Task                                                  | Description                                     | Accuracy   | Key Technologies               |
 | ----- | ----------------------------------------------------- | ----------------------------------------------- | ---------- | ------------------------------ |
-| **3** | [Car Price Prediction](#-task-3-car-price-prediction) | Predict used car prices using regression models | **99.2%**  | Linear Regression, Optuna      |
-| **4** | [Email Spam Detection](#-task-4-email-spam-detection) | Classify SMS messages as spam or ham            | **98.9%**  | NLP, Random Forest, SMOTE      |
-| **5** | [Sales Prediction](#-task-5-sales-prediction)         | Predict sales from advertising spend            | **98.97%** | Lasso Regression, ROI Analysis |
+| **3** |[Car Price Prediction](./Car_Price_Prediction/README.md) | Predict used car prices using regression models | **99.2%**  | Linear Regression, Optuna      |
+| **4** | [Email Spam Detection](./Spam_Detection/README.md)  | Classify SMS messages as spam or ham            | **98.9%**  | NLP, Random Forest, SMOTE      |
+| **5** | [Sales Prediction](./Sales_Prediction/README.md)       | Predict sales from advertising spend            | **98.97%** | Lasso Regression, ROI Analysis |
 
 ---
 
